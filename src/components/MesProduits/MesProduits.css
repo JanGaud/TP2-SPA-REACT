@@ -1,0 +1,8 @@
+.produits-container{
+    width: 95%;
+    margin-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
