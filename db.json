@@ -1,0 +1,26 @@
+{
+    "produits": [
+      {
+        "id": 1,
+        "titre": "Voiture 1",
+        "description": "Description de la voiture 1",
+        "prix": 10000,
+        "categorie": "volvo"
+      },
+      {
+        "id": 2,
+        "titre": "Voiture 2",
+        "description": "Description de la voiture 2",
+        "prix": 20000,
+        "categorie": "audi"
+      },
+      {
+        "id": 3,
+        "titre": "Voiture 3",
+        "description": "Description de la voiture 3",
+        "prix": 30000,
+        "categorie": "mercedes"
+      }
+    ]
+  }
+  
