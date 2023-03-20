@@ -1,19 +1,22 @@
-// import Form from "./components/Form/Form";
-import Nav from "./components/Nav/Nav";
-import MesProduits from "./components/MesProduits/MesProduits";
-import "./App.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Acceuil from "./pages/Acceuil";
+import Produits from "./pages/Produits";
 
 function App() {
   return (
     <>
-    <Nav />
-    <div>
-      <div className="app-wrapper">
-          <MesProduits />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Acceuil />} />
+        <Route path="/Produits" element={<Produits />} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
 
 export default App;
+
+ReactDOM.render(<App />, document.getElementById("root"));

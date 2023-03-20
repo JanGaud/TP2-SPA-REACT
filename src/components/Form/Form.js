@@ -36,9 +36,6 @@ function Form(props) {
   return (
     <div className="container">
       <form className="form-produits" onSubmit={handleSubmit}>
-        <div className="form-logo">
-          <img src="./img/RVA-Logo-short.png" alt="" />
-        </div>
         <label>
           <input
             type="text"
