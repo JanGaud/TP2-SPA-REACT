@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Form from "../Form/Form";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { TiEdit } from "react-icons/ti";
-import './Produit.css'
-
+import "./Produit.css";
 
 const Produit = ({ produits, removeProduit, updateProduit }) => {
   const [edit, setEdit] = useState({ id: null, value: "" });
@@ -26,15 +25,22 @@ const Produit = ({ produits, removeProduit, updateProduit }) => {
 
   return produits.map((produit, index) => (
     <div
-      className={produit.isComplete ? "produit-row complete" : "todo-row"}
+      className={
+        produit.isComplete ? "produit-row complete produit-card" : "todo-row"
+      }
       key={index}
     >
-      <div key={produit.id}>
-        <h2>{produit.titre}</h2>
-        <p>{produit.description}</p>
-        <p>Prix: {produit.prix}</p>
-        <p>Catégorie: {produit.categorie}</p>
+      <div key={produit.id} className="produit-header">
+        <h2>{produit.titre}</h2>      
       </div>
+        <div className="produit-description">
+          <p>{produit.description}</p>
+        </div>
+        <div className="produit-info">
+          <p>Prix: {produit.prix}</p>
+          <p>Catégorie: {produit.categorie}</p>
+        </div>
+
       <div className="icons">
         <RiCloseCircleLine
           onClick={() => removeProduit(produit.id)}

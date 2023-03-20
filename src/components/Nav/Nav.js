@@ -1,15 +1,14 @@
-import React from 'react';
-import { useState } from 'react';
-import './Nav.css';
+import React from "react";
+import "./Nav.css";
 
 function Nav() {
-      
-    return (
-      <>
-
-      </>
-    );
-  }
-
+  return (
+    <>
+      <nav>
+        
+      </nav>
+    </>
+  );
+}
 
 export default Nav;

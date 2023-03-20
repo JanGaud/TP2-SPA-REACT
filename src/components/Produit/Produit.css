@@ -1,3 +1,40 @@
-.produit-row{
-    color: aquamarine;
+.todo-row{
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #0000001a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 325px;
+    max-width: 325px;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+.produit-header h2{
+    color: #C92B20;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    overflow: hidden;
+}
+
+.produit-description{
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.produit-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
